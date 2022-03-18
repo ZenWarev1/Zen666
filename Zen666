@@ -1,0 +1,70 @@
+--Ui
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Zen X", "BloodTheme")
+local Main = Window:NewTab("Main")
+local Misc  = Window:NewTab("Misc")
+local KeyBind = Window:NewTab("KeyBind")
+local Others = Window:NewTab("Others")
+local Credit = Window:NewTab("Credit")
+
+
+--Others
+local Section = Others:NewSection("Others")
+Section:NewButton("Bypassed fly", "fly high", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/uCr1QXJ7'))()
+end)
+Section:NewButton("Infinite ammo", "patched", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/loboazul666/Inf-Ammo/main/Obfuscated%22'))()
+end)
+Section:NewButton("Fps Boost", "Makes ur pc rtx 3090", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/ywFjby1i'))()
+end)
+
+
+--credit
+local Section = Credit:NewSection("Made by ZenK#5434")
+local Section = Credit:NewSection("Op Gui")
+
+
+--Keybind
+local Section = KeyBind:NewSection("KeyBind")
+Section:NewKeybind("Keybind", "Im homophobic bitches", Enum.KeyCode.V, function()
+	Library:ToggleUI()
+end)
+
+
+-- player
+local Section = Main:NewSection("Main")
+Section:NewButton("Aimlock (not mines)", "bro is trash and needs aimlock", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/coolmanstrongsuperman/lol/main/TheWare'))()
+end)
+Section:NewButton("AntiStomp", "ppl cant make u go into a coma", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BlueaqeR/scripts-lol/main/Da%20Hood%20Anti%20Stomp%20(Optimized)"))()
+end)
+
+
+-- Misc
+local Section = Misc:NewSection("Misc")
+Section:NewButton("Crash", "Crash the server", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))() 
+end)
+Section:NewButton("fe headless", "headless tryhard", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/S2k0LBQh'))()
+end)
+Section:NewButton("Fake Macro", "Project Project x x x", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Topcoldgaming/loadstring-scritps-/main/Encoded%20FAKE%20macro%20script"))()
+end)
+Section:NewButton("Fly(X)", "pro fly", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/At5NK91R"))()
+end)
+Section:NewButton("AutoStomp", "auto stomps a player", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/JEn9wRzW')
+end)
+game.StarterGui:SetCore(
+	"SendNotification",
+	{
+		Title = "nahh",
+		Text = "bro summoned me",
+        Icon = "http://www.roblox.com/asset/?id=7169194492"
+	}
+)
